@@ -5,4 +5,4 @@ A simple web application that returns results of the novel coronavirus data from
 This webapp was created as a term project for a University CSC course using jQuery.<Br/>
 <Br/>
 
-<img src="https://user-images.githubusercontent.com/14143045/79957009-d2069000-8435-11ea-8f8e-e276e44cb751.png" width="700">
+<img src="https://user-images.githubusercontent.com/14143045/79957009-d2069000-8435-11ea-8f8e-e276e44cb751.png" width="750">
