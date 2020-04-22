@@ -9,7 +9,7 @@ function submit() {
 	url = url+country;
 	$.get(url, function(data){
  			displayResults(data);
-      mapper(data);
+      //mapper(data);
 		});
 }
 
