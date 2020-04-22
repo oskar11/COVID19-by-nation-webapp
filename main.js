@@ -1,6 +1,6 @@
 
 
-//I used https://covid-19-apis.postman.com/ to get my api
+//I used https://covid-19-apis.postman.com/ to get the api
 function submit() {
 	$("#output").show();
 
