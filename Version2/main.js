@@ -1,3 +1,6 @@
+//oskar11 @github
+//main.js file for version 2
+
 let new_cases=document.getElementById("new_case");
 let new_death=document.getElementById("new_death");
 let total_death=document.getElementById("total_death");
