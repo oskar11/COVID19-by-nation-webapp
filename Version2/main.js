@@ -59,8 +59,6 @@ fetch("{API-KEY}", requestOptions)
       let deaths = row.insertCell(5);
       let serious_critical = row.insertCell(6);
       let recovered_per_country = row.insertCell(7);
-      //let activecase=row.insertCell(6);
-      //order.textContent=i+1+".";
       var img = document.createElement('img');
       img.src =  countries_stat[i].countryInfo.flag;
       img.setAttribute("height","15px");
@@ -118,13 +116,10 @@ fetch("{API-KEY}", requestOptions)
       let province = row.insertCell(0);
       let cases = row.insertCell(1);
       let deaths=row.insertCell(2);
-      //let recovered=row.insertCell(3);
-      //console.log(data[i].province);
       province.textContent = reg[i].region;
       cases.textContent = reg[i].infectedCount;
       deaths.innerHTML = reg[i].deceasedCount;
       count++;
-      //recovered.textContent=data[i].stats.recovered;
   }
 
   }))
