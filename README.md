@@ -7,8 +7,6 @@ This webapp was originally created as a term project for my CSC course<Br/>
  <a href="https://covid19dashboardbc.netlify.app">Working web app hosted on covid19dashboardbc.netlify.app</a> 
 <Br/>
 
-version 2 (source code for mobile page will be uploaded soon TBA):
-
 Desktop view and Mobile view screenshots:
 <Br/>
 <img src="https://user-images.githubusercontent.com/14143045/85275669-807a8180-b435-11ea-9ef8-15676112c5e0.png" width="500" height="329">
