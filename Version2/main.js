@@ -14,14 +14,19 @@ let incu_ca=document.getElementById('incu_ca');
 let critical=document.getElementById('critical_ca');
 
 
+
+
+
+
+
+//GLOBAL DATA
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
-
-fetch("{API-KEY}", requestOptions)
+fetch("{API-KEY}", requestOptions) //Insert CDC API here
   .then(response => response.json().then(data =>{
-  console.log(data);
+  //console.log(data);
   total_cases.textContent = data.cases.toLocaleString();
   total_death.textContent = data.deaths.toLocaleString();
   total_recovered.textContent = data.recovered.toLocaleString();
@@ -29,18 +34,24 @@ fetch("{API-KEY}", requestOptions)
 
   }))
   .catch(error => console.log('error', error));
-//new
+
+
+
+
+
+
+
+//COUNTRY DATA and LIVE MAP DATA
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
-
-fetch("{API-KEY}", requestOptions)
+fetch("{API-KEY}", requestOptions) //Insert CDC API
   .then(response => response.json().then(data =>{
-  console.log(data);
+  //console.log(data);
   let countries_stat = data;
+  //live map
   for(let i = 0; i<countries_stat.length;i++){
-
     var circle=L.circle([countries_stat[i].countryInfo.lat, countries_stat[i].countryInfo.long], {
       color: 'orange',
       fillColor: 'orange',
@@ -50,9 +61,7 @@ fetch("{API-KEY}", requestOptions)
     {
     }
 ).addTo(map);
-
-
-
+//table
       let row = table.insertRow(1+i);
       let order = row.insertCell(0);
       let country_name = row.insertCell(1);
@@ -77,22 +86,25 @@ fetch("{API-KEY}", requestOptions)
 
   }
 
-
-
   }))
   .catch(error => console.log('error', error));
 
 
 
 
+
+
+
+
+//CANADIAN LIVE DATA
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
 
-fetch("{API-KEY}", requestOptions)
+fetch("{API-KEY}", requestOptions)//Insert CDC API here
   .then(response => response.json().then(data =>{
-  console.log(data);
+  //console.log(data);
   case_ca.textContent=data.cases.toLocaleString();
   death_ca.textContent=data.deaths.toLocaleString();
   incu_ca.textContent=data.recovered.toLocaleString();
@@ -101,15 +113,19 @@ fetch("{API-KEY}", requestOptions)
 
   }))
   .catch(error => console.log('error', error));
-//new
 
 
+
+
+
+
+//PROV LIVE DATA
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
 
-fetch("{API-KEY}", requestOptions)
+fetch("{API-KEY}", requestOptions) //Insert CDC API here
   .then(response => response.json().then(data =>{
   console.log(data);
   let count=0;
