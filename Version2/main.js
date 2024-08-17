@@ -16,9 +16,6 @@ let critical=document.getElementById('critical_ca');
 
 
 
-
-
-
 //GLOBAL DATA
 var requestOptions = {
   method: 'GET',
@@ -34,9 +31,6 @@ fetch("{API-KEY}", requestOptions) //Insert CDC API here
 
   }))
   .catch(error => console.log('error', error));
-
-
-
 
 
 
@@ -94,8 +88,6 @@ fetch("{API-KEY}", requestOptions) //Insert CDC API
 
 
 
-
-
 //CANADIAN LIVE DATA
 var requestOptions = {
   method: 'GET',
@@ -113,7 +105,6 @@ fetch("{API-KEY}", requestOptions)//Insert CDC API here
 
   }))
   .catch(error => console.log('error', error));
-
 
 
 
