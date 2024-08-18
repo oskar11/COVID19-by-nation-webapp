@@ -8,6 +8,8 @@ Resources used: USCDC API, BCCDC Data,  WHO Data, Leaflet API
 <Br/>
 As of April 2024, this project no longer supports real-time reports from the CDC API as most health authorities no longer report COVID-19 data, the web app demo is now only displaying historical data.
 <Br/>
+<Br/>
+<Br/>
  <a href="https://covid19dashboardbc.netlify.app">Working web app demo hosted on covid19dashboardbc.netlify.app</a> 
 <Br/>
 
