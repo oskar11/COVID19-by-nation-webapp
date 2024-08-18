@@ -1,0 +1,69 @@
+{
+    "covidDataByProvince": [
+        {
+            "province": "Alberta",
+            "cases": "63,4149",
+            "deaths": "5,818"
+        },
+        {
+            "province": "British Columbia",
+            "cases": "399,494",
+            "deaths": "5,430"
+        },
+        {
+            "province": "Manitoba",
+            "cases": "152,072",
+            "deaths": "2,256"
+        },
+        {
+            "province": "New Brunswick",
+            "cases": "70,545",
+            "deaths": "438"
+        },
+        {
+            "province": "Newfoundland and Labrador",
+            "cases": "46,074",
+            "deaths": "198"
+        },
+        {
+            "province": "Northwest Territories",
+            "cases": "11,426",
+            "deaths": "22"
+        },
+        {
+            "province": "Nova Scotia",
+            "cases": "106,158",
+            "deaths": "451"
+        },
+        {
+            "province": "Nunavut",
+            "cases": "3,531",
+            "deaths": "7"
+        },
+        {
+            "province": "Ontario",
+            "cases": "1,609,170",
+            "deaths": "16,404"
+        },
+        {
+            "province": "Prince Edward Island",
+            "cases": "43,146",
+            "deaths": "46"
+        },
+        {
+            "province": "Quebec",
+            "cases": "1,466,600",
+            "deaths": "20,236"
+        },
+        {
+            "province": "Saskatchewan",
+            "cases": "141,245",
+            "deaths": "1,480"
+        },
+        {
+            "province": "Yukon",
+            "cases": "4,547",
+            "deaths": "26"
+        }
+    ]
+}
