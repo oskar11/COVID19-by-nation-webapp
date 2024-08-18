@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coronavirus Tracker / dashboard CANADA WORLD</title>
+  <meta charset="utf-8">
+    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+  <meta property="og:title" content="Covid-19 Dashboard">
+  <meta property="og:description" content="&#128308;Live Covid-19 Updates for Global cases and National Cases. Live Data on covid-19 cases/deaths/recovered/critical.">
+  <meta property="og:image" content="https://phil.cdc.gov//PHIL_Images/23311/23311_lores.jpg">
+  <meta property="og:url" content="https://covid19dashboardbc.netlify.com/index.html">
+  <meta name="author" content="@oskar11">
+  <meta http-equiv="refresh" content="900">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mobilecss.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+<style>
+  #map{
+    position: absolute;
+    width: 100%;
+    padding-top: 50%;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <div class="mobile-container">
+    <a id="goup"></a>
+    <div class="topnav">
+      <a href="mobile" class="active">COVID-19 DASHBOARD</a>
+      <div id="myLinks">
+        <a  href="#one"><span class="iconify" data-icon="el:globe" data-inline="false"></span> GLOBAL STATISTICS</a>
+        <a  href="#two"><span class="iconify" data-icon="emojione-monotone:flag-for-canada" data-inline="false"></span> CANADIAN STATISTICS</a>
+        <a  href="#three"><span class="iconify" data-icon="el:flag-alt" data-inline="false"></span> COUNTRY STATISTICS</a>
+        <a href="resources.html"><span class="iconify" data-icon="entypo:info-with-circle" data-inline="false"></span> About The Project & Data</a>
+        <p id="statistic_taken_at">&#128225; CDC API Data</p>
+      </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <span class="iconify" data-icon="icomoon-free:menu3" data-inline="false"></span>
+  </a>
+</div>
+<div class="tcontainer">
+  <div class="ticker-wrap">
+    <div class="ticker-move">
+      <div class="ticker-item">
+        <b>BREAKING NEWS: </b>The World Health Organization Declared COVID-19 as a Pandemic on March 11, 2020.</div>
+      <div class="ticker-item">
+        <b>COVID-19 DASHBOARD:</b> This project was created by Oscar 2020-2024 github.com/oskar11</div>
+          <div class="ticker-item">
+            <b>BREAKING NEWS: </b>The World Health Organization Declared COVID-19 as a Pandemic on March 11, 2020.</div>
+        <div class="ticker-item">
+          <b>COVID-19 DASHBOARD:</b> This project was created by Oscar 2020-2024 github.com/oskar11</div>
+        <div class="ticker-item">
+          <b>BREAKING NEWS: </b>The World Health Organization Declared COVID-19 as a Pandemic on March 11, 2020.</div>
+      <div class="ticker-item">
+        <b>COVID-19 DASHBOARD:</b> This project was created by Oscar 2020-2024 github.com/oskar11</div>
+      <div class="ticker-item">
+        <b>BREAKING NEWS: </b>The World Health Organization Declared COVID-19 as a Pandemic on March 11, 2020.</div>
+      <div class="ticker-item">
+        <b>COVID-19 DASHBOARD:</b> This project was created by Oscar 2020-2024 github.com/oskar11</div>
+      <div class="ticker-item">
+        <b>BREAKING NEWS: </b>The World Health Organization Declared COVID-19 as a Pandemic on March 11, 2020.</div>
+      <div class="ticker-item">
+        <b>COVID-19 DASHBOARD:</b> This project was created by Oscar 2020-2024 github.com/oskar11</div>
+    </div>
+  </div>
+</div>
+<a id="one"></a>
+<div class="dashboard">
+  <div class="header">
+    <br>
+      <h2>Global COVID-19 Cases:</h2>
+      <p id="total_cases"></p>
+      <div id="map">
+      </div>
+  </div>
+  <div class="bs">
+
+  </div>
+  <table id="padup">
+    <tr>
+      <td><h2><span class="iconify" data-icon="fa-solid:skull-crossbones" data-inline="false"></span> Global Deaths:</h2></td>
+    </tr>
+    <tr>
+      <td><p id="total_death">N/A</td>
+    </tr>
+    <tr>
+      <td><h2><span class="iconify" data-icon="emojione:green-heart" data-inline="false"></span> Global Recovered:</h2></td>
+    </tr>
+    <tr>
+      <td><p id="total_recovered">N/A</td>
+    </tr>
+    <tr>
+      <td><h2><span class="iconify" data-icon="si-glyph:heart-signal" data-inline="false"></span> Emergency Status:</h2></td>
+    </tr>
+    <tr>
+      <td><p id="status">N/A</p></td>
+    </tr>
+      </table>
+      <br>
+      <iframe src="https://ourworldindata.org/grapher/daily-cases-covid-19?year=2020-04-27&country=OWID_WRL" style="width: 100%; height: 400px; border: 0px none;"></iframe>
+    <br>
+    <br>
+    <a href="#goup"><span class="iconify" data-icon="bx:bxs-up-arrow-circle" data-inline="false"></span> GO TO TOP</a>
+    <a id="two"></a>
+    <h2>&#127464;&#127462; <b>Canadian Stats</b></h2>
+    <table>
+      <tr>
+        <td><h2><span class="iconify" data-icon="emojione-monotone:biohazard" data-inline="false"></span> Cases:</h2></td>
+      </tr>
+      <tr>
+        <td><p id="case_ca">N/A</p></td>
+      </tr>
+      <tr>
+        <td><h2><span class="iconify" data-icon="fa-solid:skull-crossbones" data-inline="false"></span> Deaths:</h2></td>
+      </tr>
+      <tr>
+        <td><p id="death_ca">N/A</p></td>
+      </tr>
+      <tr>
+        <td><h2><span class="iconify" data-icon="emojione:green-heart" data-inline="false"></span> Recovered:</h2></td>
+      </tr>
+      <tr>
+        <td><p id="incu_ca">N/A</p></td>
+      </tr>
+      <tr>
+        <td><h2><span class="iconify" data-icon="si-glyph:heart-signal" data-inline="false"></span> Emergency Status:</h2></td>
+      </tr>
+      <tr>
+        <td><p id="status_ca">N/A</p></td>
+      </tr>
+      <tr>
+        <td><h2><span class="iconify" data-icon="si-glyph:test-tube-2" data-inline="false"></span> Tests Conducted:</h2>  </td>
+      </tr>
+      <tr>
+        <td><p id="tests">N/A</p>
+        </td>
+      </tr>
+    </table>
+  <br>
+  <div class="provincial">
+    <table id="prov">
+      <tr>
+        <th id="provin"><u>
+          Province/Region:
+        </u></th>
+        <th id="confirmi">Cases:</th>
+        <th id="deathi">Deaths:</th>
+      </tr>
+    </table>
+      <br>
+    <iframe src="https://ourworldindata.org/grapher/daily-cases-covid-19?year=2020-04-27&country=CAN" style="width: 100%; height: 400px; border: 0px none;"></iframe>
+  </div>
+  <br>
+  <a id="three"></a>
+  <a href="#goup"><span class="iconify" data-icon="bx:bxs-up-arrow-circle" data-inline="false"></span> GO TO TOP</a>
+  <h2><span class="iconify" data-icon="el:flag-alt" data-inline="false"></span> Real Time World Stats</h2>
+  <div class="Statistics">
+    <table id="countries_stat">
+        <tr>
+          <th><u>Order</u></th>
+          <th><u>Countries</u></th>
+          <th><u>Active Cases*</u></th>
+          <th><u>New Cases</u></th>
+          <th><u>All Cases</u></th>
+          <th><u>Deaths</u></th>
+          <th><u>Critical</u></th>
+          <th><u>Recovered</u></th>
+        </tr>
+    </table>
+
+  </div>
+
+</div>
+
+<script>
+var map= L.map('map').setView([15,-6], 1);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {noWrap: true,
+attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<script src='main.js'></script>
+<script type="text/javascript">
+if (screen.width > 699) {
+  document.location = "index";
+}
+</script>
+
+</body>
+</html>
