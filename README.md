@@ -1,6 +1,6 @@
 # COVID19-by-nation-webapp
 <Br/>
-A very simple web application that returns results of the novel coronavirus data from each country specified by the user. Data for the original project was collected from covid-19-apis.postman.com through the APIs listed in the documentation. The leaflet API is used to visually display the coordinates of each country, along with cases.<Br/>
+This web application provides a comprehensive overview of novel coronavirus data from various countries, leveraging the CDC API to deliver up-to-date information. Initially developed in March 2020 as part of a data visualization assignment during my university studies, the application integrates with the Leaflet API to effectively display and visualize COVID-19 data on interactive maps.<Br/>
 <Br/>
 This webapp was originally created as a term project for my CSC course<Br/>
 <Br/>
